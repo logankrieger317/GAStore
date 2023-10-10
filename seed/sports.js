@@ -1,18 +1,18 @@
 const db = require('../db')
-const Actors = require('../models/sports')
+const Sports = require('../models/index')
 
 
 // Connect to the database
 db.on('error', console.error.bind(console, 'MongoDB connection error:'))
 
 const main = async () => {
-    const actors = [{
+    const sports = [{
         sport: 'test sport',
         product:'test product' ,
         price: 'test $17.50', }
     ]
 
-    await Actors.insertMany(actors)
+    await Sports.insertMany(sports)
     console.log("Created some Sports!!!")
 }
 const run = async () => {

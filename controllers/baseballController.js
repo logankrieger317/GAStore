@@ -1,5 +1,5 @@
 const { Baseball } = require('../models');
-const Sports =require('../models/sports')
+// const Sports =require('../models/sports')
 
 module.exports={
     getAllBaseball,

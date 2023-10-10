@@ -1,16 +1,15 @@
 # GAStore
 
+***Resposibilities***
+Repo Man- Logan
 
-Haroon Frotan
-this works
+- Front End-
+- Haroon and Michael
+    -Design-
+    -Logic-
 
+-Back End-
+Ben and Logan
+    -Database-
+    -Logic-
 
-Ben - This works for me now
-
-
-michael here---new stuff is working fine
-
-Logan this is my change
-
-
- main

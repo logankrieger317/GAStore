@@ -10,7 +10,7 @@ let deductBtnArr = document.querySelectorAll('.minus-btn');
 let addButtonArr = document.querySelectorAll('.plus-btn');
 
 deductBtnArr.forEach(deductBtn => {
-    deductBtn.addEventListener("click", function(){
+    deductBtn.addEventListener('click', (e)=>{
         console.log("minus clicked")
         let currentInputBox = deductBtn.previousElementSibling
         currentInputBox.value =  currentInputBox.value - 1;

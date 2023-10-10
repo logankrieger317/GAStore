@@ -1,4 +1,4 @@
-const Sports =require('../models/actors')
+const Sports =require('../models/sports')
 
 module.exports={
     getAllSports,
@@ -8,8 +8,8 @@ module.exports={
 
 async function getAllSports(req,res){
     try{
-        const actors = await Sports.find();
-        res.json(actors);
+        const sports = await Sports.find();
+        res.json(sports);
     }catch(error){
         res.status(500).json({error:error.message})
     }
@@ -18,9 +18,9 @@ async function getAllSports(req,res){
 async function getSportsById (req,res){
     try{
         const {id} = req.params;
-        const actor = await Sports.findById(id);
-        if(actor){
-            return res.json(actor);
+        const sport = await Sports.findById(id);
+        if(sport){
+            return res.json(sport);
         }
         res.status(404).json({message:'Sport not found!'})
     }catch(error){

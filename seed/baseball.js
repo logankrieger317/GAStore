@@ -9,7 +9,8 @@ const main = async () => {
     const baseballProducts = [{
         sport: 'baseball',
         product:'bat' ,
-        price: 'test $17.50', }
+        price: 'test $17.50',
+        id: '1' }
     ]
 
     await Baseball.insertMany(baseballProducts)

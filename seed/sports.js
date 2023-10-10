@@ -1,5 +1,5 @@
 const db = require('../db')
-const Sports = require('../models/sports')
+const Sports = require('../models/index')
 
 
 // Connect to the database

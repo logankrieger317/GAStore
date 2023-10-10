@@ -2,6 +2,8 @@ const express = require('express');
 const db = require('./db');
 const logger = require('morgan');
 const sportsController = require('./controllers/sportsController');
+const baseballController = require('./controllers/baseballController');
+
 
 const PORT = process.env.PORT || 3001;
 
@@ -15,6 +17,6 @@ app.get('/', (req, res) => {
 app.get('/sports', sportsController.getAllSports);
 app.get('/sports/:id', sportsController.getSportsById);
 
-app.get('/baseball', sportsController.getBaseballById);
+app.get('/baseball/:id', baseballController.getBaseballById);
 
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))

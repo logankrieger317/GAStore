@@ -11,4 +11,4 @@ const Sports = new Schema(
     { timestamps: true },
 )
 
-module.exports = mongoose.model('actors', actor)
+module.exports = mongoose.model('sport', Sports)

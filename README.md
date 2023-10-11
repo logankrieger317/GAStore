@@ -13,3 +13,4 @@ Ben and Logan
     -Database-
     -Logic-
 
+<img src = "wireframe.jpg">

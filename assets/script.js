@@ -1,7 +1,7 @@
 
 
 
-
+// Below this line is javascript for checkout page. Above this line is javascript for index page
 
 // Below this line is javascript for checkout page. Above this line is javascript for index page
 
@@ -11,11 +11,13 @@ let addButtonArr = document.querySelectorAll('.plus-btn');
 // console.log(deductBtnArr)
 
 
+
+
 deductBtnArr.forEach(deductBtn => {
     deductBtn.addEventListener('click', (e)=>{
         console.log("minus clicked")
         let currentInputBox = deductBtn.previousElementSibling
-        currentInputBox.value =  currentInputBox.value - 1;
+        currentInputBox.value =  parseInt(currentInputBox.value) - 1;
     } )  
 });
 
@@ -28,3 +30,4 @@ addButtonArr.forEach(addButton => {
         currentInputBox.value =  parseInt(currentInputBox.value) + 1;
     }
 });
+

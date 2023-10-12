@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 
     <script defer src="assets/script.js" ></script>
 
    
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 
     <title>GA Sports Store</title>
@@ -23,23 +24,12 @@
           <a href="#checkout">Checkout</a>
         </div>
       </header>
-   
-    <div class="products">
-        <div class="product">
-            <!-- <img src="..."> -->
-            <h2>Baseball Glove</h2>
-            <span class="product-price">$19.99</span> 
-            <p>Quantity: <input type="number" name="quantity1" value="1" min="0"></p>
-            <button class="add-to-cart" data-product="Product 1" data-price="19.99">Add to Cart</button>
-        </div>
 
-        <div class="product">
-            <!-- <img src="...." > -->
-            <h2>Baseball Glove</h2>
-            <span class="product-price">$24.99</span> 
-            <p>Quantity: <input type="number" name="quantity2" value="1" min="0"></p>
-            <button class="add-to-cart" data-product="Product 2" data-price="24.99">Add to Cart</button>
-        </div>
+     
+   
+    <div class="products" id="productInformation">
+       
+        
     </div> 
     <div class="cart">
         <h2>Shopping Cart</h2>

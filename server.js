@@ -1,6 +1,8 @@
 const express = require('express');
 const db = require('./db');
 const logger = require('morgan');
+const cors = require('cors')
+
 const baseballController = require('./controllers/baseballController');
 const basketballController = require('./controllers/basketballController');
 const footballController = require('./controllers/footballController');
@@ -11,6 +13,7 @@ const PORT = process.env.PORT || 3001;
 
 const app = express();
 app.use(express.json())
+app.use(cors())
 app.use(logger('dev'));
 
 app.get('/', (req, res) => {

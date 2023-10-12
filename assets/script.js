@@ -97,16 +97,12 @@ const getAllBaseball = async () => {
     //  let productPic = data.image
     productInfo.innerHTML =
       productInfo.innerHTML +
-      `
-            
-
-
-  <div class="product">
-  <img src="${baseballProduct.image}">
-  <h2>${baseballProduct.product}</h2>
-  <span class="product-price">${baseballProduct.price}</span> 
-  <button class="add-to-cart" data-product="Product 1" data-price="19.99">Add to Cart</button>
-  </div>`;
+      `<div class="product">
+      <img src="${baseballProduct.image}">
+      <h2>${baseballProduct.product}</h2>
+      <span class="product-price">${baseballProduct.price}</span> 
+      <button class="add-to-cart" data-product="Product 1" data-price="19.99">Add to Cart</button>
+      </div>`;
   
   });
 };
@@ -175,12 +171,5 @@ const getBaseball = async () => {
        `
     })
 
-// button2.addEventListener('click', async () => {
-//     console.log('button clicked')
-//     // const actorInput = document.getElementById('actorText')
-//     // const name = actorInput.value
-//     // console.log(actor)
 
-//  })
-//  console.log('working')
 

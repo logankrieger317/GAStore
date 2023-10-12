@@ -10,6 +10,7 @@ const hockeyController = require('./controllers/hockeyController');
 const PORT = process.env.PORT || 3001;
 
 const app = express();
+app.use(express.json())
 app.use(logger('dev'));
 
 app.get('/', (req, res) => {
@@ -41,4 +42,6 @@ app.post('/hockey', hockeyController.createHockey)
 app.put('/hockey/:id', hockeyController.updateHockey)
 app.delete('/hockey/:id', hockeyController.deleteHockey)
 
-app.listen(PORT, () => console.log(`Listening on port: ${PORT}`))
+app.listen(PORT, () => {
+console.log(`Listening on port: ${PORT}`)
+})

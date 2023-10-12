@@ -1,7 +1,15 @@
 
 
 
-// Below this line is javascript for checkout page. Above this line is javascript for index page
+
+
+const getAllBaseball = async () => {
+    const sports = await axios.get('http://localhost:3001/baseball')
+    console.log(sports)
+}
+
+getAllBaseball()
+
 
 // Below this line is javascript for checkout page. Above this line is javascript for index page
 

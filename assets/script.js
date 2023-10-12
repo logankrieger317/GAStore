@@ -31,3 +31,27 @@ addButtonArr.forEach(addButton => {
     }
 });
 
+let response = await axios.get(
+    `http://localhost:3001/baseball`
+ )
+ let baseballArr=response.baseballProducts
+baseballArr.forEach(baseballProduct => {
+    
+     
+     let { data } = baseballProduct
+     let productPic = data.image
+        productInfo.innerHTML = `
+        <li>Name: ${data.product}</li>
+        <li>Price: ${data.price}</li>
+        `
+     productImage.src = actorPic
+});
+
+button2.addEventListener('click', async () => {
+    console.log('button clicked')
+    // const actorInput = document.getElementById('actorText')
+    // const name = actorInput.value
+    // console.log(actor)
+    
+ })
+ console.log('working')

@@ -1,11 +1,13 @@
 // const addItemsToCart = document.getElementsByClassName("add-to-cart");
 // console.log(addItemsToCart);
+
 // for (let i = 0; i < addItemsToCart.length; i++) {
 //   let button = addItemsToCart[i];
 //   button.addEventListener("click", () => {
 //     console.log("Clicked");
 //   });
 // }
+
 // const products = [
 //     { name: "Product 1", price: 19.99 },
 //     { name: "Product 2", price: 24.99 },
@@ -23,11 +25,13 @@
 //     }
 // }
 //   updateCart()
+
 // const getAllBaseball = async () => {
 //     const sports = await axios.get('mongodb://127.0.0.1:27017/sportsDatabase')
 //     console.log(sports)
 // }
 // getAllBaseball()
+
 // Below this line is javascript for checkout page. Above this line is javascript for index page
 console.log("i exist");
 // let deductBtnArr = document.querySelectorAll('.minus-btn');
@@ -40,10 +44,12 @@ console.log("i exist");
 //         currentInputBox.value =  parseInt(currentInputBox.value) - 1;
 //     } )
 // });
+
 // console.log("i exist")
 // let deductBtnArr = document.querySelectorAll('.minus-btn');
 // let addButtonArr = document.querySelectorAll('.plus-btn');
 // console.log(deductBtnArr)
+
 // deductBtnArr.forEach(deductBtn => {
 //     deductBtn.addEventListener('click', (e)=>{
 //         console.log("minus clicked")
@@ -51,7 +57,13 @@ console.log("i exist");
 //         currentInputBox.value =  parseInt(currentInputBox.value) - 1;
 //     } )
 // });
+
+
 let productInfo = document.querySelector("#productInformation");
+
+
+let productInfo = document.querySelector("#productInformation");
+
 const getAllBaseball = async () => {
   const sports = await axios.get("http://localhost:3001/baseball");
   // console.log(sports.data)
@@ -71,4 +83,9 @@ const getAllBaseball = async () => {
   </div>`;
   });
 };
+<<
+
+
+
 getAllBaseball();
+

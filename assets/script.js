@@ -59,7 +59,6 @@ console.log("i exist");
 // });
 
 
-let productInfo = document.querySelector("#productInformation");
 
 
 let productInfo = document.querySelector("#productInformation");
@@ -82,8 +81,8 @@ const getAllBaseball = async () => {
       <button class="add-to-cart" data-product="Product 1" data-price="19.99">Add to Cart</button>
       </div>`;
   
-};
-<<
+})}
+
 
 
 
@@ -125,30 +124,30 @@ getAllBaseball();
 
 
 
-const getBaseball = async () => {
-    const baseball = await axios.get('http://localhost:3001/baseball')
-    console.log(baseball)
- }
+// const getBaseball = async () => {
+//     const baseball = await axios.get('http://localhost:3001/baseball')
+//     console.log(baseball)
+//  }
  
- getBaseball()
+//  getBaseball()
  
  
- button2.addEventListener('click', async () => {
-    console.log('button clicked')
-    const actorInput = document.getElementById('actorText')
-    const name = actorInput.value
-    console.log(actor)
-    let response = await axios.get(
-       `http://localhost:3001/actors/${name}`
-    )
-    console.log(response)
-    let { data } = response
-    let productI = data.image
-       actorInfo.innerHTML = `
-       <li>Product: ${data.product}</li>
-       <li>Price: ${data.price}</li>
-       `
-    })
+//  button2.addEventListener('click', async () => {
+//     console.log('button clicked')
+//     const actorInput = document.getElementById('actorText')
+//     const name = actorInput.value
+//     console.log(actor)
+//     let response = await axios.get(
+//        `http://localhost:3001/actors/${name}`
+//     )
+//     console.log(response)
+//     let { data } = response
+//     let productI = data.image
+//        actorInfo.innerHTML = `
+//        <li>Product: ${data.product}</li>
+//        <li>Price: ${data.price}</li>
+//        `
+//     })
 
 
 

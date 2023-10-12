@@ -64,14 +64,13 @@ const getAllBaseball = async () => {
             
 
 
-            <div class="product">
-            <img src="${baseballProduct.image}">
-<h2>${baseballProduct.product}</h2>
-<span class="product-price">${baseballProduct.price}</span> 
-<button class="add-to-cart" data-product="Product 1" data-price="19.99">Add to Cart</button>
-</div>
-            `;
-    //  productImage.src = actorPic
+  <div class="product">
+  <img src="${baseballProduct.image}">
+  <h2>${baseballProduct.product}</h2>
+  <span class="product-price">${baseballProduct.price}</span> 
+  <button class="add-to-cart" data-product="Product 1" data-price="19.99">Add to Cart</button>
+  </div>`;
+  
   });
 };
 

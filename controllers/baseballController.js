@@ -33,7 +33,7 @@ async function getBaseballById (req,res){
 
 async function createBaseball (req, res) {
     try {
-        const baseball = await new Baseball(req.body)
+        const baseball = await  Baseball.create(req.body)
         await baseball.save()
         return res.staus(201).json({
             baseball,
@@ -68,3 +68,5 @@ async function deleteBaseball (req, res) {
         return res.status(500).send(e.message)
     }
 }
+
+
